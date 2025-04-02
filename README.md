@@ -11,7 +11,7 @@ Este projeto é um sistema bancário simples desenvolvido em Python. Ele permite
 
 ## Como usar
 
-1. Certifique-se de ter o Python instalado em sua máquina.
+1. Certifique-se de ter o Python instalado em seu computador.
 2. Execute o arquivo `banco.py` em um ambiente Python para interagir com as funcionalidades da classe `Conta`.
 
 ## Tecnologias Utilizadas
