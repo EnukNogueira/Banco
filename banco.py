@@ -8,10 +8,10 @@ class Conta:
         self.__idade = idade
         self.__cpf = cpf
         self.__saldo = saldo
-        self.__historico = []  # Lista para registrar o histórico de transações
+        self.__historico = []  #Registra o histórico de transações
 
     def extrato(self):
-        #Exibe o extrato da conta, incluindo o histórico de transações.
+        #Exibe o extrato da conta.
         print(f"\n--- Extrato da conta de {self.__nome} ---")
         if not self.__historico:
             print("Nenhuma transação realizada até o momento.")
@@ -21,7 +21,7 @@ class Conta:
         print(f"Saldo atual: R${self.__saldo:.2f}\n")
 
     def depositar(self, valor):
-        #Realiza um depósito na conta, se o valor for válido.
+        #Realiza um depósito na conta.
         if valor <= 0:
             raise ValueError("O valor do depósito deve ser positivo.")
         self.__saldo += valor
@@ -29,7 +29,7 @@ class Conta:
         print(f"Depósito de R${valor:.2f} realizado com sucesso!")
 
     def sacar(self, valor):
-        #Realiza um saque da conta, se houver saldo suficiente.
+        #Realiza um saque da conta.
         if valor <= 0:
             raise ValueError("O valor do saque deve ser positivo.")
         if valor > self.__saldo:
@@ -60,7 +60,7 @@ class Conta:
             'valor': valor
         })
 
-    # Métodos para acessar os atributos de forma controlada
+    # Métodos para acessar os atributos de forma controlada.
     @property
     def nome(self):
         #Retorna o nome do titular da conta.
